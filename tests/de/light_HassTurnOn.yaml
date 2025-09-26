@@ -90,6 +90,16 @@ tests:
       - Dreh alle Lichter auf
       - Drehe alle Lichter auf
       - Alle Lampen aufdrehen
+      - mach überall das Licht an
+      - mach das Licht überall an
+      - schalte überall die Lampen ein
+      - schalte die Lampen überall ein
+      - dreh überall die Lichter auf
+      - dreh die Lichter überall auf
+      - überall die Lampen einschalten
+      - die Lampen überall einschalten
+      - überall das Licht anschalten
+      - das Licht überall anschalten
     intent:
       name: HassTurnOn
       slots:
