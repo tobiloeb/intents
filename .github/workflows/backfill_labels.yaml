@@ -27,13 +27,13 @@ jobs:
                 await github.rest.issues.getLabel({ owner, repo, name: label });
               } catch (e) {
                 if (e.status === 404) {
-                  core.info(`[dry-run] would create label: ${label}`);
-                  //await github.rest.issues.createLabel({
-                  //  owner, repo,
-                  //  name: label,
-                  //  color: 'ededed',
-                  //  description: 'PR touches files for this language'
-                  //});
+                  core.info(`Creating label: ${label}`);
+                  await github.rest.issues.createLabel({
+                    owner, repo,
+                    name: label,
+                    color: 'ededed',
+                    description: 'PR touches files for this language'
+                  });
                 } else {
                   throw e;
                 }
@@ -78,7 +78,7 @@ jobs:
 
               // 🚫 Skip this PR if it already has *any* lang:* label
               if ([...current].some(l => l.startsWith('lang:'))) {
-                core.info(`Skipping PR #${prNumber} (already has lang:* label)`);
+                core.info(`Skipping PR #${prNumber} (already has lang label)`);
                 continue;
               }
 
@@ -88,10 +88,10 @@ jobs:
                 await ensureLabelExists(label);
               }
               if (toAdd.length) {
-                core.info(`[dry-run] PR #${prNumber}: would add ${toAdd.join(', ')}`);
-                //await github.rest.issues.addLabels({
-                //  owner, repo, issue_number: prNumber, labels: toAdd
-                //});
+                core.info(`PR #${prNumber}: adding ${toAdd.join(', ')}`);
+                await github.rest.issues.addLabels({
+                  owner, repo, issue_number: prNumber, labels: toAdd
+                });
               }
 
               if (toAdd.length) changed++;
