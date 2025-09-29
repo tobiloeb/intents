@@ -68,7 +68,7 @@ jobs:
                 const m = LanguageFileRegex.exec(path);
                 if (m?.groups?.language_code) langs.add(m.groups.language_code);
               }
-              const desired = new Set([...langs].map(code => `lang:${code}`));
+              const desired = new Set([...langs].map(code => `lang: ${code}`));
 
               // Current labels
               const { data: currentLabelsData } = await github.rest.issues.listLabelsOnIssue({
