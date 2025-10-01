@@ -312,9 +312,9 @@ intents:
           device_class: window
 
       - sentences:
-          - "<welche> fenster (ist|sind) {bs_window_states:state}[ <area_floor>]"
-          - "<welche> fenster (ist|sind) <area_floor> {bs_window_states:state}"
-          - "<welche> fenster <area_floor> (ist|sind) {bs_window_states:state}"
+          - "<welche> fenster (ist|sind)[ noch] {bs_window_states:state}[ <area_floor>]"
+          - "<welche> fenster (ist|sind) <area_floor>[ noch] {bs_window_states:state}"
+          - "<welche> fenster <area_floor> (ist|sind)[ noch] {bs_window_states:state}"
         response: welches
         slots:
           domain: binary_sensor
