@@ -603,6 +603,7 @@ expansion_rules:
   setzen: "(<setze>|<stelle>)"
   setze: "(setz[e]|änder[e]|veränder[e])"
   stelle: "stell[e]"
+  erstelle: "erstell[e]"
   setzen_end_of_sentence: "(setzen|stellen|einstellen|ändern|verändern)"
   abdeckung: "([(der|das|den) ]Rollo|[(der|den) ](Roll[l]aden|Vorhang)|[den ]Vorhängen|[(das|die|der|den) ]Raffstore[s]|[(der|die) ](Markise|Gardine|Beschattung|Jalousie|Abdeckung|Rollos|Vorhänge)|[(der|die|den) ](Markisen|Gardinen|Beschattungen|Jalousien|Abdeckungen|Roll[l]äden))"
   alle_abdeckungen: "<alle> (Rollos|Abdeckungen|Roll[l](a|ä)den|Jalousien|Raffstores|Markisen|Vorhänge|Beschattungen|Gardine[n])"
@@ -656,7 +657,7 @@ expansion_rules:
   im_zuhause: "(zu Hause|[im ]Zuhause)"
 
   # Timers
-  timer_set: "(starte|setze|stelle|erstelle)"
+  timer_set: "(starte|setze|<stelle>|<erstelle>)"
   timer_cancel: "(beende|stopp[e]|lösch[e])"
   timer_cancel_end_of_sentence: "(ausschalten|deaktivieren|abbrechen|stoppen|aus)"
   timer_duration_seconds: "{timer_seconds:seconds} Sekunde[n]"
