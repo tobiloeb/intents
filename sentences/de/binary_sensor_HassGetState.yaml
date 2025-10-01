@@ -311,6 +311,13 @@ intents:
           domain: binary_sensor
           device_class: window
 
+      - sentences:
+          - "wo sind[ noch] fenster {bs_window_states:state}"
+        response: wo
+        slots:
+          domain: binary_sensor
+          device_class: window
+
       # Gas
       - sentences:
           - "(ist|wurde) <name>[ <area>] {bs_gas_states:state}"

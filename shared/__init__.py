@@ -341,6 +341,8 @@ def render_response(
         for entity in result.entities_list
     }
 
+   # print('TTEESSTT')
+    #print(result.context, flush=True)
     # For timer intents
     if timers:
         slots["timers"] = [t.asdict() for t in timers]

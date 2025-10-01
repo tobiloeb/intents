@@ -826,6 +826,17 @@ tests:
         state: "on"
     response: "0"
 
+  - sentences:
+      - "wo sind noch fenster auf?"
+    intent:
+      name: HassGetState
+      slots:
+        domain: "binary_sensor"
+        device_class: "window"
+        state: "on"
+        area: "Wohnzimmer"
+    response: "Wohnzimmer"
+
   # Gas
   - sentences:
       - "wurde Gas entdeckt?"

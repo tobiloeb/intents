@@ -63,12 +63,29 @@ responses:
         {{ query.matched | length }}
 
       wo: |
-        {% if state.state == "home" %}
-          {{ slots.name | capitalize }} ist zu Hause
-        {% elif state.state == "not_home" %}
-          {{ slots.name | capitalize }} ist unterwegs
+        {% if slots.domain == "person" %}
+          {% if state.state == "home" %}
+            {{ slots.name | capitalize }} ist zu Hause
+          {% elif state.state == "not_home" %}
+            {{ slots.name | capitalize }} ist unterwegs
+          {% else %}
+            {{ slots.name | capitalize }} ist im Bereich {{ state.state }}
+          {% endif %}
         {% else %}
-          {{ slots.name | capitalize }} ist im Bereich {{ state.state }}
+          {% if not query.matched %}
+            Nirgends
+          {% else %}
+            {{ state }}
+            {% set match = query.matched | map(attribute="area_id") | sort | unique | list %}
+            {% if match | length > 4 %}
+              {{ match[:3] | join(", ") }} und {{ (match | length - 3) }} weitere
+            {% else %}
+              {%- for name in match -%}
+                {% if not loop.first and not loop.last %}, {% elif loop.last and not loop.first %} und {% endif -%}
+                {{ name }}
+              {%- endfor -%}
+            {% endif %}
+          {% endif %}
         {% endif %}
 
       wer: |
