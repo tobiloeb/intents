@@ -3,6 +3,7 @@ language: de
 tests:
   - sentences:
       - "Starte einen 2 Stunden Timer"
+      - "Starte noch einen Timer für 2 Stunden"
       - "Stelle Timer auf 2 Stunden"
       - "Stelle Timer für 2 Stunden"
       - "Stelle einen Timer auf 2 Stunden"
@@ -24,6 +25,7 @@ tests:
       - "Stelle Timer für 1 Stunde"
       - "Stelle einen Timer auf 1 Stunde"
       - "Stelle einen Timer für 1 Stunde"
+      - "Stelle noch einen Timer für 1 Stunde"
       - "Erstelle 1 Stunde Timer"
       - "1 Stunde Timer"
       - "Timer auf 1 Stunde"
