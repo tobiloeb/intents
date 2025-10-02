@@ -607,6 +607,7 @@ expansion_rules:
   setzen: "(<setze>|<stelle>)"
   setze: "(setz[e]|änder[e]|veränder[e])"
   stelle: "stell[e]"
+  erstelle: "erstell[e]"
   setzen_end_of_sentence: "(setzen|stellen|einstellen|ändern|verändern)"
   aktivieren: "aktivier[e|en]"
   deaktivieren: "de<aktivieren>"
@@ -673,7 +674,7 @@ expansion_rules:
   gas_sensor: "Gas[-]Sensor[en]"
 
   # Timers
-  timer_set: "(starte|setze|stelle|erstelle)"
+  timer_set: "(starte|setze|<stelle>|<erstelle>)"
   timer_cancel: "(beende|stopp[e]|lösch[e])"
   timer_cancel_end_of_sentence: "(ausschalten|deaktivieren|abbrechen|stoppen|aus)"
   timer_duration_seconds: "{timer_seconds:seconds} Sekunde[n]"
