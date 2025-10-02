@@ -828,13 +828,10 @@ tests:
 
   - sentences:
       - "welche Fenster sind offen im Wohnzimmer?"
-      - "welche Fenster sind noch offen im Wohnzimmer?"
       - "welches Fenster ist geöffnet im Wohnzimmer?"
       - "welche Fenster sind im Wohnzimmer offen?"
-      - "welche Fenster sind im Wohnzimmer noch offen?"
       - "welches Fenster ist im Wohnzimmer offen?"
       - "welche Fenster im Wohnzimmer sind offen?"
-      - "welche Fenster im Wohnzimmer sind noch offen?"
       - "welche Fenster im Wohnzimmer sind geöffnet?"
       - "welches Fenster im Wohnzimmer ist offen?"
     intent:
@@ -877,9 +874,7 @@ tests:
 
   - sentences:
       - "welche Fenster sind offen?"
-      - "welche Fenster sind noch offen?"
       - "welches Fenster ist auf?"
-      - "welche Fenster sind noch auf?"
       - "welche Fenster sind auf?"
       - "welche Fenster sind geöffnet?"
     intent:
