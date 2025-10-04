@@ -3,7 +3,6 @@ intents:
   HassTimerStatus:
     data:
       - sentences:
-          # The word "noch" is a skip_word and removed from sentences here to reduce the sentence count
           - "Timer Status"
           - "Status (des|meines) Timers"
           - "wie lange (läuft|braucht|hat|dauert|geht) (der|mein) Timer"
