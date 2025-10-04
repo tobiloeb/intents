@@ -17,3 +17,7 @@ intents:
           - "[(den|meinen) ]Timer <area> um <timer_duration> verlängern"
           - "[(den|meinen) ]{timer_name:name} Timer um <timer_duration> verlängern"
           - "[(den|meinen) ]Timer (namens|für) {timer_name:name} um <timer_duration> verlängern"
+          - "füge <timer_duration> zu (dem|meinem) {timer_name:name} Timer hinzu"
+          - "füge <timer_duration> zu (dem|meinem) Timer hinzu"
+          - "füge <timer_duration> zum Timer hinzu"
+          - "füge <timer_duration> zum {timer_name:name} Timer hinzu"
