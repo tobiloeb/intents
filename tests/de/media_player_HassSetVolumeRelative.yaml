@@ -12,6 +12,9 @@ tests:
       - "drehe die lautstärke runter"
       - mach die Lautstärke der Musik leiser
       - mach die Musik leiser
+      - mache etwas leiser
+      - mach ein bisschen leiser
+      - etwas leiser bitte
       - Musik leiser
       - verringere die Lautstärke der Musik
       - reduziere die Lautstärke der Musik
@@ -66,6 +69,9 @@ tests:
       - "drehe die lautstärke rauf"
       - mach die Lautstärke der Musik lauter
       - mach die Musik lauter
+      - mache etwas lauter
+      - mache ein bisschen lauter
+      - ein bisschen lauter
       - Musik lauter
       - erhöhe die Lautstärke der Musik
       - Lautstärke der Musik aufdrehen
