@@ -4,7 +4,7 @@ intents:
     data:
       # Current area - down
       - sentences:
-          - "[[(mach[e]|stell[e]) ]([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) ]leiser"
+          - "[[(mach[e]|stell[e]) ]([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik|etwas|ein bisschen) ]leiser"
           - "(verringere|reduziere) die lautstärke[ der Musik]"
           - "senke die lautstärke[ der Musik][ ab]"
           - "lautstärke[ der Musik] (verringern|reduzieren|[ab]senken)"
@@ -29,7 +29,7 @@ intents:
             slot: true
       # current area - up
       - sentences:
-          - "[[(mach[e]|stell[e]) ]([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik) ]lauter"
+          - "[[(mach[e]|stell[e]) ]([den ]ton|[die ]lautstärke[ der Musik]|[die ]Musik|etwas|ein bisschen) ]lauter"
           - "erhöhe die lautstärke[ der Musik]"
           - "lautstärke[ der Musik] (erhöhen|aufdrehen)"
           - "dreh[e] [die ]lautstärke[ der Musik] ([he]rauf|auf)"
