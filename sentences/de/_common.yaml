@@ -702,6 +702,14 @@ expansion_rules:
   media_unmute: "(entmuten|ton (an|ein)[schalten]|laut schalten|Stummschaltung (aufheben|aus|deaktivieren))"
   media_mute: "(mute[n]|ton (aus[schalten]|abschalten)|Stumm[[ ]schalten]|Stummschaltung (aktivieren|an|ein))"
 
+  # STT-Fixes
+  # these expansion rules will be removed once STT is capable of recognising the covered words/sentences correct.
+
+  # fix for "Licht an"
+  stt_fix_licht_an: "Lichtern"
+  # fix for "...aus im...."
+  stt_fix_aus_im: "ausm"
+
 skip_words:
   - "bitte"
   - "danke"
