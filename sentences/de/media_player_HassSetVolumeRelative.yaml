@@ -125,7 +125,7 @@ intents:
           - "lautstärke[ der Musik] <area_floor>[ um] <volume_step> (verringern|reduzieren|[ab]senken)"
           - "dreh[e] [die ]lautstärke[ der Musik] <area_floor>[ um] <volume_step> [he]runter"
         expansion_rules:
-          volume_step: "{volume_step_down:volume_step}[%| percent]"
+          volume_step: "{volume_step_down:volume_step}[%| Prozent]"
       # Area/floor by name - up
       - sentences:
           - "(({area}|{floor}) lauter|[[die ]Musik ]lauter <area_floor>)"
@@ -143,4 +143,4 @@ intents:
           - "lautstärke[ der Musik] <area_floor>[ um] <volume_step> (erhöhen|aufdrehen)"
           - "dreh[e] [die ]lautstärke[ der Musik] <area_floor>[ um] <volume_step> ([he]rauf|auf)"
         expansion_rules:
-          volume_step: "{volume_step_up:volume_step}[%| percent]"
+          volume_step: "{volume_step_up:volume_step}[%| Prozent]"
