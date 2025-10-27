@@ -281,6 +281,7 @@ tests:
     response: "Lautstärke festgelegt"
   # Area by name - step_down
   - sentences:
+      - "wohnzimmer um 20% leiser"
       - "wohnzimmer um 20 Prozent leiser"
       - "20% leiser im wohnzimmer"
       - "mache den ton im wohnzimmer 20% leiser"
@@ -331,6 +332,7 @@ tests:
     response: "Lautstärke festgelegt"
   # floor by name - step_down
   - sentences:
+      - "Erdgeschoss um 20% leiser"
       - "Erdgeschoss um 20 Prozent leiser"
       - "20% leiser im Erdgeschoss"
       - "mache den ton im Erdgeschoss 20% leiser"
@@ -380,6 +382,7 @@ tests:
     response: "Lautstärke festgelegt"
   # area by name - step_up
   - sentences:
+      - "wohnzimmer um 20% lauter"
       - "wohnzimmer um 20 Prozent lauter"
       - "20% lauter im wohnzimmer"
       - "mache den ton im wohnzimmer 20% lauter"
@@ -428,6 +431,7 @@ tests:
     response: "Lautstärke festgelegt"
   # floor by name - step_up
   - sentences:
+      - "Erdgeschoss um 20% lauter"
       - "Erdgeschoss um 20 Prozent lauter"
       - "20% lauter im Erdgeschoss"
       - "mache den ton im Erdgeschoss 20% lauter"
