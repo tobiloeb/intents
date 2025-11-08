@@ -43,6 +43,20 @@ entities:
     id: light.bedroom_desk_lamp
     state: "off"
     area: bedroom
+  - name: Wohnzimmerlampe
+    id: light.livingroom_lamp
+    state: "off"
+    area: living_room
+    attributes:
+      brightness: null
+      color_temp_kelvin: null
+  - name: Stehlampe
+    id: light.livingroom_floorlamp
+    state: "on"
+    area: living_room
+    attributes:
+      brightness: 127
+      color_temp_kelvin: 2700
   - name: Küchenschalter
     id: switch.kitchen
     state: "off"
