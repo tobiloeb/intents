@@ -24,6 +24,16 @@ tests:
       - "Wie lange geht der Timer noch"
       - "Was macht mein Timer"
       - "Wie lange hat mein Timer noch"
+      - "Wie lang läuft der Timer noch"
+      - "Wie lang braucht der Timer noch"
+      - "Wie lang hat der Timer noch"
+      - "Wie lang dauert der Timer noch"
+      - "Wie lang geht der Timer noch"
+      - "Wie lang läuft mein Timer noch"
+      - "Wie lang braucht mein Timer noch"
+      - "Wie lang dauert mein Timer noch"
+      - "Wie lang geht mein Timer noch"
+      - "Wie lang hat mein Timer noch"
     intent:
       name: HassTimerStatus
     response: |
@@ -51,6 +61,16 @@ tests:
       - "Wie lange geht der 1 Stunde Timer noch"
       - "Status des 1 Stunde Timers"
       - "Was macht der 1 Stunde Timer"
+      - "Wie lang läuft der 1 Stunde Timer noch"
+      - "Wie lang braucht der 1 Stunde Timer noch"
+      - "Wie lang hat der 1 Stunde Timer noch"
+      - "Wie lang dauert der 1 Stunde Timer noch"
+      - "Wie lang geht der 1 Stunde Timer noch"
+      - "Wie lang läuft mein 1 Stunde Timer noch"
+      - "Wie lang braucht mein 1 Stunde Timer noch"
+      - "Wie lang hat mein 1 Stunde Timer noch"
+      - "Wie lang dauert mein 1 Stunde Timer noch"
+      - "Wie lang geht mein 1 Stunde Timer noch"
     intent:
       name: HassTimerStatus
       slots:
@@ -67,6 +87,16 @@ tests:
       - "Wie lange dauert der Pizza timer noch"
       - "Wie lange geht der Pizza timer noch"
       - "Was macht der Pizza Timer"
+      - "Wie lang läuft der Pizza Timer noch"
+      - "Wie lang braucht der Pizza Timer noch"
+      - "Wie lang hat der Pizza timer noch"
+      - "Wie lang dauert der Pizza timer noch"
+      - "Wie lang geht der Pizza timer noch"
+      - "Wie lang läuft mein Pizza Timer noch"
+      - "Wie lang braucht mein Pizza Timer noch"
+      - "Wie lang hat mein Pizza timer noch"
+      - "Wie lang dauert mein Pizza timer noch"
+      - "Wie lang geht mein Pizza timer noch"
     intent:
       name: HassTimerStatus
       slots:
@@ -103,6 +133,24 @@ tests:
       - "Was macht mein Timer im Wohnzimmer"
       - "Was macht der Wohnzimmer Timer"
       - "Was macht der Timer im Wohnzimmer"
+      - "wie lang läuft der Wohnzimmer Timer noch"
+      - "Wie lang braucht der Wohnzimmer Timer noch"
+      - "Wie lang hat der Wohnzimmer Timer noch"
+      - "Wie lang dauert der Wohnzimmer Timer noch"
+      - "wie lang läuft der Timer im Wohnzimmer noch"
+      - "Wie lang braucht der Timer im Wohnzimmer noch"
+      - "Wie lang hat der Timer im Wohnzimmer noch"
+      - "Wie lang dauert der Timer im Wohnzimmer noch"
+      - "Wie lang geht der Timer im Wohnzimmer noch"
+      - "wie lang läuft mein Wohnzimmer Timer noch"
+      - "Wie lang braucht mein Wohnzimmer Timer noch"
+      - "Wie lang hat mein Wohnzimmer Timer noch"
+      - "Wie lang dauert mein Wohnzimmer Timer noch"
+      - "wie lang läuft mein Timer im Wohnzimmer noch"
+      - "Wie lang braucht mein Timer im Wohnzimmer noch"
+      - "Wie lang hat mein Timer im Wohnzimmer noch"
+      - "Wie lang dauert mein Timer im Wohnzimmer noch"
+      - "Wie lang geht mein Timer im Wohnzimmer noch"
     intent:
       name: HassTimerStatus
       slots:
