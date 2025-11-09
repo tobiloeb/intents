@@ -59,7 +59,7 @@ intents:
           - "[die ]Farbe[ (von|vom)] <name>[ (auf|zu)] {color} <setzen_end_of_sentence>"
           - "<name>[ Farbe][ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
           - "Lass[e] <name> {color}[ er]leuchten"
-          - "<name> {color} <leuchten_lassen>"
+          - "<name> [in [Farbe ]]{color} <leuchten_lassen>"
           - "Färbe <name> {color}[ ein]"
         requires_context:
           domain: light
@@ -72,7 +72,7 @@ intents:
           - "(änder[e]|veränder[e]) (<licht>|[die ]Farbe [(<lichtes_mit_artikel>|<lichter>|<alle_lichter>)]|<lichter>|<alle_lichter>) <area_floor> zu {color}"
           - "[die ]Farbe[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>)] <area_floor>[ (auf|zu)] {color} <setzen_end_of_sentence>"
           - "[(<licht>|<lichter>|<alle_lichter>|<beim_licht>|<bei_allen_lichtern>) ]<area_floor> [die ]Farbe[ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
-          - "[(<licht>|<lichter>|<alle_lichter>) ]<area_floor> [([in ]Farbe|in) ]{color} <leuchten_lassen>"
+          - "[(<licht>|<lichter>|<alle_lichter>) ]<area_floor> [in [Farbe ]]{color} <leuchten_lassen>"
           - "Färbe[ (<licht>|<lichter>|<alle_lichter>)] <area_floor> {color}[ ein]"
         response: color
         expansion_rules:
@@ -85,7 +85,7 @@ intents:
           - "(änder[e]|veränder[e]) (<licht>|[die ]Farbe [(<lichtes_mit_artikel>|<lichter>|<alle_lichter>)]|<lichter>|<alle_lichter>)[ <hier>] zu {color}"
           - "[die ]Farbe[ (<licht_ohne_artikel>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>)][ <hier>][ (auf|zu)] {color} <setzen_end_of_sentence>"
           - "[(<licht>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>|<beim_licht>|<bei_allen_lichtern>) ][<hier> ][die ]Farbe[ (auf|zu)] {color}[ <setzen_end_of_sentence>]"
-          - "[(<licht>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>) ][<hier> ][Farbe ]{color} <leuchten_lassen>"
+          - "[(<licht>|<lichtes_mit_artikel>|<lichter>|<alle_lichter>) ][<hier> ][in [Farbe ]]{color} <leuchten_lassen>"
           - "Färbe ((<licht>|<lichter>|<alle_lichter>)[ <hier>]|(den|diesen) Raum) {color}[ ein]"
         response: "color"
         requires_context:

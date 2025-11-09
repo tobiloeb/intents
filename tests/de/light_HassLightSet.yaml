@@ -418,6 +418,8 @@ tests:
       - Schlafzimmerlampe Farbe auf Grün ändern
       - ändere die Farbe von der Schlafzimmerlampe auf grün
       - Farbe von der Schlafzimmerlampe auf grün ändern
+      - die schlafzimmerlampe in grün leuchten lassen
+      - schlafzimmerlampe in farbe grün einfärben
     intent:
       name: HassLightSet
       slots:
@@ -451,6 +453,12 @@ tests:
       - Bei allen Lampen im Schlafzimmer Farbe auf Blau einstellen
       - Bei den Lichtern im Schlafzimmer die Farbe auf Blau ändern
       - Bei allen Leuchten im Schlafzimmer Farbe Blau
+      - Das Licht im Schlafzimmer in blau leuchten lassen
+      - die Lampen im Schlafzimmer in Farbe blau leuchten lassen
+      - alle lampen im Schlafzimmer blau leuchten lassen
+      - alle leuchten im schlafzimmer in blau leuchten lassen
+      - schlafzimmer in blau leuchten lassen
+      - das Schlafzimmer in farbe blau leuchten lassen
     intent:
       name: HassLightSet
       slots:
@@ -485,6 +493,12 @@ tests:
       - Bei allen Lampen im Erdgeschoss Farbe auf Blau einstellen
       - Bei den Lichtern im Erdgeschoss die Farbe auf Blau ändern
       - Bei allen Leuchten im Erdgeschoss Farbe Blau
+      - Das Licht im Erdgeschoss in blau leuchten lassen
+      - die Lampen im Erdgeschoss in Farbe blau leuchten lassen
+      - alle lampen im Erdgeschoss blau leuchten lassen
+      - alle leuchten im Erdgeschoss in blau leuchten lassen
+      - Erdgeschoss in blau leuchten lassen
+      - das Erdgeschoss in farbe blau leuchten lassen
     intent:
       name: HassLightSet
       slots:
@@ -534,6 +548,13 @@ tests:
       - Bei den Lichtern in diesem Raum die Farbe auf Blau ändern
       - Bei allen Leuchten hier im Raum Farbe Blau
       - Alle Lichter in diesem Raum die Farbe auf Blau einstellen
+      - Das Licht in diesem Raum in blau leuchten lassen
+      - die Lampen im Raum in Farbe blau leuchten lassen
+      - alle lampen hier blau leuchten lassen
+      - alle leuchten im raum in blau leuchten lassen
+      - diesen Raum blau leuchten lassen
+      - den raum in blau leuchten lassen
+      - den raum in farbe blau leuchten lassen
     intent:
       name: HassLightSet
       context:
