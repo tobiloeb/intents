@@ -86,6 +86,22 @@ responses:
           {% endif %}
         {% endif %}
 
+      get_media_name: |
+        {% set title = state.attributes.media_title | default(None) %}
+        {% set artist = state.attributes.media_artist | default(None) %}
+        {% set result = (title and artist) and (title ~ " von " ~ artist) or (title or artist) or None %}
+        {% if state.state in ["off", "idle"] %}
+          {{ slots.name | capitalize }} spielt derzeit nichts ab
+        {% elif not result %}
+          Keine Informationen verfügbar
+        {% elif state.state == "paused" %}
+          {{ result }} ist derzeit pausiert
+        {% elif state.state == "buffering" %}
+          {{ result }} lädt derzeit
+        {% else %}
+          {{ result }}
+        {% endif %}
+
       get_volume: |
         {% if 'volume_level' in state.attributes %}
           {% set volume = (state.attributes.volume_level | float(0)) * 100 %}
