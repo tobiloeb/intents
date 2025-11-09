@@ -398,6 +398,9 @@ lists:
         out: "on"
       - in: "((aus|ab)[geschaltet]|zu)"
         out: "off"
+      # STT-fix for "...aus im..."
+      - in: "ausm"
+        out: "off"
   temperature:
     range:
       type: "temperature"
@@ -707,7 +710,7 @@ expansion_rules:
 
   # fix for "Licht an"
   stt_fix_licht_an: "Lichtern"
-  # fix for "...aus im...."
+  # fix for "...aus im...." (info: there is one mor fix for this in the {on_off_states} list in this file)
   stt_fix_aus_im: "ausm"
   # fix for "Setz[e] ... auf die Liste"
   stt_fix_setze: "setzt"

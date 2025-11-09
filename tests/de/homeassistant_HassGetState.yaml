@@ -436,6 +436,8 @@ tests:
       - "ist die Schlafzimmerlampe aus im Schlafzimmer?"
       - "ist die Schlafzimmerlampe im Schlafzimmer aus?"
       - "ist im Schlafzimmer die Schlafzimmerlampe aus?"
+      # STT-fixes
+      - "ist die Schlafzimmerlampe ausm Schlafzimmer?"
     intent:
       name: HassGetState
       slots:
@@ -448,6 +450,8 @@ tests:
       - "ist die Schlafzimmerlampe aus im Obergeschoss?"
       - "ist die Schlafzimmerlampe im Obergeschoss aus?"
       - "ist im Obergeschoss die Schlafzimmerlampe aus?"
+      # STT-fixes
+      - "ist die Schlafzimmerlampe ausm Obergeschoss?"
     intent:
       name: HassGetState
       slots:
@@ -467,6 +471,30 @@ tests:
         domain: "switch"
         state: "on"
     response: "Nein"
+
+  - sentences:
+      - "sind irgendwelche Lichter aus im Schlafzimmer?"
+      # STT-fixes
+      - "sind irgendwelche Lichter ausm Schlafzimmer?"
+    intent:
+      name: HassGetState
+      slots:
+        area: "Schlafzimmer"
+        domain: "light"
+        state: "off"
+    response: "Ja, Schreibtischlampe"
+
+  - sentences:
+      - "sind irgendwelche Schalter aus im Erdgeschoss?"
+      # STT-Fixes
+      - "sind irgendwelche Schalter ausm Erdgeschoss?"
+    intent:
+      name: HassGetState
+      slots:
+        floor: "Erdgeschoss"
+        domain: "switch"
+        state: "off"
+    response: "Ja, Küchenschalter"
 
   - sentences:
       - "sind irgendwelche Schalter im Erdgeschoss an?"
@@ -492,6 +520,9 @@ tests:
 
   - sentences:
       - "sind alle Schalter im Flur aus?"
+      - "sind alle schalter aus im Flur?"
+      # STT-fixes
+      - "sind alle schalter ausm Flur?"
     intent:
       name: HassGetState
       slots:
@@ -502,6 +533,9 @@ tests:
 
   - sentences:
       - "sind alle Schalter im Erdgeschoss aus?"
+      - "Sind alle Schalter aus im Erdgeschoss?"
+      # STT-Fixes
+      - "Sind alle Schalter ausm Erdgeschoss?"
     intent:
       name: HassGetState
       slots:
@@ -534,6 +568,9 @@ tests:
       - "welche Lampen im Obergeschoss sind aus?"
       - "welche Lampen im Obergeschoss sind ausgeschaltet?"
       - "welche Lampe im Obergeschoss ist aus?"
+      - "Welche Lampe ist aus im Obergeschoss?"
+      # STT-Fixes
+      - "Welche Lampe ist ausm Obergeschoss?"
     intent:
       name: HassGetState
       slots:
@@ -546,6 +583,9 @@ tests:
       - "welche Lampen im Schlafzimmer sind aus?"
       - "welche Lampen im Schlafzimmer sind ausgeschaltet?"
       - "welche Lampe im Schlafzimmer ist aus?"
+      - "welche Lampe ist aus im Schlafzimmer?"
+      # STT-Fixes
+      - "welche Lampe ist ausm Schlafzimmer?"
     intent:
       name: HassGetState
       slots:
@@ -583,4 +623,28 @@ tests:
         floor: "Obergeschoss"
         domain: "light"
         state: "on"
+    response: "1"
+
+  - sentences:
+      - "wie viele Lampen sind aus im Schlafzimmer?"
+      # STT-Fixes
+      - "wieviele lampen sind ausm Schlafzimmer?"
+    intent:
+      name: HassGetState
+      slots:
+        area: "Schlafzimmer"
+        domain: "light"
+        state: "off"
+    response: "1"
+
+  - sentences:
+      - "wie viele Lampen sind aus im Obergeschoss?"
+      # STT-Fixes
+      - "wie viele Lampen sind ausm Obergeschoss?"
+    intent:
+      name: HassGetState
+      slots:
+        floor: "Obergeschoss"
+        domain: "light"
+        state: "off"
     response: "1"
