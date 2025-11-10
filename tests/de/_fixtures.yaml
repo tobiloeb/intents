@@ -80,12 +80,14 @@ entities:
     state: "heat"
     attributes:
       current_temperature: 22
+      temperature: 23
   - name: Küchenthermostat
     id: climate.kitchen
     area: kitchen
     state: "heat"
     attributes:
       current_temperature: 24
+      temperature: 23
   - name: "Markise Osten"
     id: "cover.terrasse_markise"
     area: terrace
