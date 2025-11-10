@@ -12,6 +12,13 @@ tests:
       - Wie kalt ist es im Wohnzimmer?
       - Wie viel Grad hat es im Wohnzimmer?
       - Wie viel Grad sind es im Wohnzimmer?
+    intent:
+      name: HassClimateGetTemperature
+      slots:
+        area: Wohnzimmer
+    response: "22 Grad"
+
+  - sentences:
       - Auf wie viel Grad ist die Heizung im Wohnzimmer eingestellt?
       - Auf wie viel Grad ist die Heizung im Wohnzimmer gestellt?
       - Auf wie viel Grad ist der Thermostat im Wohnzimmer eingestellt?
@@ -30,7 +37,8 @@ tests:
       name: HassClimateGetTemperature
       slots:
         area: Wohnzimmer
-    response: "22 Grad"
+    response: "23 Grad"
+
   # by floor
   - sentences:
       - Wie hoch ist die Temperatur im Erdgeschoss?
@@ -43,6 +51,13 @@ tests:
       - Wie kalt ist es im Erdgeschoss?
       - Wie viel Grad hat es im Erdgeschoss?
       - Wie viel Grad sind es im Erdgeschoss?
+    intent:
+      name: HassClimateGetTemperature
+      slots:
+        floor: Erdgeschoss
+    response: "22 Grad"
+
+  - sentences:
       - Auf wie viel Grad ist die Heizung im Erdgeschoss eingestellt?
       - Auf wie viel Grad ist die Heizung im Erdgeschoss gestellt?
       - Auf wie viel Grad ist der Thermostat im Erdgeschoss eingestellt?
@@ -61,7 +76,7 @@ tests:
       name: HassClimateGetTemperature
       slots:
         floor: Erdgeschoss
-    response: "22 Grad"
+    response: "23 Grad"
 
   - sentences:
       - Wie hoch ist die Temperatur der Küche?
@@ -70,6 +85,7 @@ tests:
       slots:
         area: Küche
     response: "24 Grad"
+
   # by satellite area
   - sentences:
       - Wie hoch ist die Temperatur?
@@ -86,6 +102,20 @@ tests:
       - Wie kalt ist es hier?
       - Wie viel Grad hat es hier?
       - Wie viel Grad sind es hier?
+      - Wie hoch ist die Temperatur in diesem Raum?
+      - Wie ist im Raum die Temperatur?
+      - Wie ist in diesem Bereich die Temperatur?
+      - Wie kalt ist es im Raum?
+      - Wieviel Grad hat es in diesem Raum?
+      - Wieviel Grad hat es in diesem Bereich?
+    intent:
+      name: HassClimateGetTemperature
+      context:
+        area: Wohnzimmer
+      slots:
+        area: Wohnzimmer
+    response: "22 Grad"
+  - sentences:
       - Auf wie viel Grad ist die Heizung hier eingestellt?
       - Auf wie viel Grad ist die Heizung hier gestellt?
       - Auf wie viel Grad ist die Heizung eingestellt?
@@ -110,12 +140,6 @@ tests:
       - Auf welche Temperatur ist das Thermostat hier gestellt?
       - Auf welche Temperatur ist das Thermostat eingestellt?
       - Auf welche Temperatur ist das Thermostat gestellt?
-      - Wie hoch ist die Temperatur in diesem Raum?
-      - Wie ist im Raum die Temperatur?
-      - Wie ist in diesem Bereich die Temperatur?
-      - Wie kalt ist es im Raum?
-      - Wieviel Grad hat es in diesem Raum?
-      - Wieviel Grad hat es in diesem Bereich?
       - Auf wieviel Grad ist die Klimaanlage in diesem Raum eingestellt?
     intent:
       name: HassClimateGetTemperature
@@ -123,13 +147,20 @@ tests:
         area: Wohnzimmer
       slots:
         area: Wohnzimmer
-    response: "22 Grad"
+    response: "23 Grad"
+
   # by name
   - sentences:
       - Wie hoch ist die Temperatur von dem Wohnzimmerthermostat?
       - Wie hoch ist die Temperatur vom Wohnzimmerthermostat?
       - Wie hoch ist die Temperatur des Wohnzimmerthermostat?
       - Wie hoch ist die Temperatur des Wohnzimmerthermostats?
+    intent:
+      name: HassClimateGetTemperature
+      slots:
+        name: Wohnzimmerthermostat
+    response: "22 Grad"
+  - sentences:
       - Auf wie viel Grad ist die Heizung Wohnzimmerthermostat eingestellt?
       - Auf wie viel Grad ist die Heizung Wohnzimmerthermostat gestellt?
       - Auf wie viel Grad ist das Wohnzimmerthermostat eingestellt?
@@ -150,7 +181,7 @@ tests:
       name: HassClimateGetTemperature
       slots:
         name: Wohnzimmerthermostat
-    response: "22 Grad"
+    response: "23 Grad"
 
   - sentences:
       - Wie hoch ist die Temperatur von dem Thermostat im Wohnzimmer?
