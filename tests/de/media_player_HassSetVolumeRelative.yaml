@@ -608,6 +608,7 @@ tests:
       - stell die Lautstärke der Musik im Erdgeschoss 20% lauter
       - erhöhe die Lautstärke der Musik im Erdgeschoss um 20%
       - erhöhe die Lautstärke der Musik um 20% im Erdgeschoss
+      - erhöhe die Lautstärke der Musik 20% im Erdgeschoss
       - Lautstärke der Musik im Erdgeschoss 20% erhöhen
       - dreh die Lautstärke der Musik im Erdgeschoss um 20% rauf
       - dreh die Lautstärke der Musik im Erdgeschoss um 20% auf
